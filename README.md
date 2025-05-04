@@ -1,4 +1,3 @@
-
 # 🏠 Housing Listings App (Inspired by HousingPanda)
 
 This is a simple web application that allows users to submit and view rental housing listings. It's inspired by HousingPanda and built using:
@@ -41,8 +40,8 @@ housingpanda/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/housing-listing-app.git
-cd housing-listing-app
+git clone https://github.com/SmitPanchal61/Housing-Panda-OA.git
+cd Housing-Panda-OA
 ```
 
 ### 2. Install Dependencies
@@ -71,6 +70,19 @@ CREATE TABLE listings (
 ```
 
 ### 4. Update `db.js` with your MySQL credentials
+
+Replace `xxxxx` with your actual MySQL root password:
+
+```js
+const mysql = require('mysql2');
+
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: 'xxxxx', // <= REPLACE this
+  database: 'housing_db'
+});
+```
 
 ---
 
